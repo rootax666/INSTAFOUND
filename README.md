@@ -1,33 +1,41 @@
-Instagram Data Collection Tool
-Overview
-The Instagram Data Collection Tool is a Python script designed to gather detailed information from Instagram profiles using the Instaloader library. This tool provides insights into a target profile's basic information, posts, and relationships with other accounts.
+INSTAFOUND
+INSTAFOUND is a Python script designed to gather detailed data from Instagram profiles using the Instaloader library. This tool provides insights into a target profile's basic information, posts, and relationships with other accounts.
 
 Features
 Profile Information Collection: Retrieve detailed information about a target Instagram profile, including username, full name, biography, followers, followees, number of posts, profile picture URL, and external URL.
 Post Data Collection: Gather data from the posts of a target profile, including date, caption, hashtags, mentions, likes, comments, and URL.
 Possible Accounts Association: Identify and collect data on accounts that the target profile follows and that have a significant number of followers (e.g., more than 1000 followers).
 Related Accounts Identification: Find and collect data on mutual followers of the target profile.
-Usage
 Requirements
 Python 3.6 or higher
-Instaloader library (pip install instaloader)
-Running the Script
+Instaloader library
+Installation
 Clone the repository:
 
 sh
 Copy code
-git clone https://github.com/yourusername/instagram-data-collection-tool.git
-cd INSTAFOUND
+git clone https://github.com/rootax666/instafound.git
+cd instafound
 Install the required Python packages:
 
 sh
 Copy code
-pip install -r requirements.txt
+pip install instaloader
+Usage
 Run the script:
 
 sh
 Copy code
 python INSTAFOUND.py
+Follow the prompts to enter the target profile username, your Instagram username, and your Instagram password.
+
+Choose a module:
+
+1: Possible Accounts
+2: Related Accounts
+3: Complete Information
+The data will be collected and saved in a JSON file with a timestamp.
+
 Example
 The script will display an ASCII banner and prompt you for the target profile username, your Instagram username, and your Instagram password.
 
